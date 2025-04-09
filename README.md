@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Super yacht mapper
 
-## Getting Started
+A web application for tracking yacht positions and locations.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- React Query
+- React Leaflet
+- Formik
+- Yup
+- Axios
+- Sonner
+- Shadcn UI
+
+### React query and axios
+
+- I use axios for making API calls and react query for caching and data fetching
+- Axios is used for making API calls to the Superyacht API
+- React Query is used for caching and data fetching
+
+### Shadcn UI and Tailwind CSS
+
+- I use Shadcn UI for UI components
+- It is a collection of pre-built UI components that are built with Radix UI and Tailwind CSS
+- It provides a consistent and modern look and feel
+
+### React Leaflet
+
+- I use React Leaflet for mapping
+- It is a wrapper for Leaflet.js that provides a React interface for Leaflet
+- It provides a consistent and modern look and feel
+
+### Formik and yup
+
+- I use Formik and Yup for form validation
+- Formik is used for form management
+- Yup is used for schema validation
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+
+```bash
+cp .env.example .env
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Journey
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Problem encountered
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### OAuth2
 
-## Learn More
+- Since we are building nextjs application, first comes to my mind was to use next-auth
+- However, next-auth does not support our oauth2 flow
+- I then decided not to use it and access the oauth link directly
+- I then make a token request and store it in cookies
+- and it works. Woooooooooooooh!!
 
-To learn more about Next.js, take a look at the following resources:
+#### My dev flow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- I started slow because I was trying to use next-auth
+- However, I soon realized that it was not the right choice
+- Then my momentum picked up
