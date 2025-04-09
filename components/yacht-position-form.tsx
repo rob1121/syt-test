@@ -1,7 +1,6 @@
 import { object, number, string } from "yup";
 import { Formik } from "formik";
 import useYachtPosition from "@/lib/hooks/seYachtPosition";
-import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import YachtPositionField from "./yacht-position-field";
 import { DateTimePicker } from "./date-time-picker";

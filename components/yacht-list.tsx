@@ -11,13 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Dialog, DialogContent, DialogHeader } from "./ui/dialog";
-import { DialogTitle } from "@radix-ui/react-dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import YachtDetails from "./yatch-tab/yacht-details";
-import YachtTab from "./yatch-tab";
-import { Button } from "./ui/button";
-import { Plus } from "lucide-react";
 import YachtDialog from "./yacht-dialog";
 
 export default function YachtList() {

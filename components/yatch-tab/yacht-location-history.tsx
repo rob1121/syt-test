@@ -18,7 +18,7 @@ export default function YachtLocationHistory({
   }
   return (
     <div>
-      {data?.positions?.length > 0 && (
+      {data && data?.positions?.length > 0 && (
         <div className="h-[600px]">
           <MapContainer
             center={[0, 0]}
